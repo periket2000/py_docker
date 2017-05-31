@@ -30,7 +30,7 @@ GIT_REPO: the repo to download.
 SRC_DIR: the source folder inside the project. 
 ```
 
-## sample mesos application json, let's say app.json
+## sample mesos application json, let's say py-docker.json (see doc/mesos/)
 
 ```json
         {
