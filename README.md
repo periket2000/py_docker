@@ -27,7 +27,8 @@ case:
 ```
 PROJECT_DIR: where everything will be installed inside the container.
 GIT_REPO: the repo to download.
-SRC_DIR: the source folder inside the project. 
+SRC_DIR: the source folder inside the project.
+APP_FILE: entry point to python application.
 ```
 
 ## sample mesos application json, let's say py-docker.json (see doc/mesos/)
@@ -42,7 +43,8 @@ SRC_DIR: the source folder inside the project.
           "env": {
               "PROJECT_DIR": "/usr/local/pyenv",
               "GIT_REPO": "https://github.com/periket2000/rest_api_demo.git",
-              "SRC_DIR": "rest_api_demo"
+              "SRC_DIR": "rest_api_demo",
+              "APP_FILE": "app.py"
           },
           "container": {
             "type": "DOCKER",

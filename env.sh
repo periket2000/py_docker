@@ -10,3 +10,4 @@ GIT_REPO=https://github.com/periket2000/rest_api_demo.git
 #                                             +-> app.py
 #                                             +-> ...
 SRC_DIR=rest_api_demo
+APP_FILE=app.py

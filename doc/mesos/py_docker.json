@@ -7,7 +7,8 @@
           "env": {
               "PROJECT_DIR": "/usr/local/pyenv",
               "GIT_REPO": "https://github.com/periket2000/rest_api_demo.git",
-              "SRC_DIR": "rest_api_demo"
+              "SRC_DIR": "rest_api_demo",
+              "APP_FILE": "app.py"
           },
           "container": {
             "type": "DOCKER",
