@@ -74,8 +74,18 @@ APP_FILE: entry point to python application.
         }
 ```
 
-## sample load on mesos
+## Sample load on mesos
 ```sh
 curl -X POST http://<marathon_host>:<marathon_port>/v2/apps -d @<file> -H "Content-type: application/json"
 curl -X POST http://192.168.250.101:8080/v2/apps -d @app.json -H "Content-type: application/json"
 ```
+
+## How to run it in local (requires docker)
+```sh
+git clone https://github.com/periket2000/py_docker.git
+cd py_docker
+docker build -t mytag .
+docker run -p 8888:8888 --env-file=env.sh mytag
+```
+
+and point your browser to "http://localhost:8888/api"
