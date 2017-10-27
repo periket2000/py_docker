@@ -84,8 +84,7 @@ curl -X POST http://192.168.250.101:8080/v2/apps -d @app.json -H "Content-type: 
 ```sh
 git clone https://github.com/periket2000/py_docker.git
 cd py_docker
-docker build -t mytag .
-docker run -p 8888:8888 --env-file=env.sh mytag
+docker run -p 8888:8888 --env-file=env.sh periket2000/py_docker
 ```
 
 and point your browser to "http://localhost:8888/api"
